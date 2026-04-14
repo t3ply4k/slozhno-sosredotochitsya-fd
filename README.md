@@ -1,0 +1,1 @@
+https://github.com/t3ply4k/slozhno-sosredotochitsya-fd
