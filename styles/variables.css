@@ -18,4 +18,8 @@
   --hover-color: #FF007066;
   --focus-color: #FF0070;
   --active-color: #FF0070;
+  --corner-color: #FF0070;
+  --section-tc: #FF0070;
+  --shadow-htc: #FF0070;
+  --shadow-ftc: #FF0070;
 }
