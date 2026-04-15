@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-position: center;
   background-attachment: fixed;
@@ -39,7 +40,7 @@
   height: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .corner {
@@ -56,12 +57,11 @@
 }
 
 .header__theme-menu {
-  font-family: "IBM Plex Mono", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: var(--main-fs);
   line-height: 25px;
-  color: var(--accent-color);
+  color: var(--menu-tc);
   justify-self: end;
   align-self: start;
   margin-top: 73px;
@@ -79,19 +79,20 @@
   background-color: transparent;
   border: none;
   padding: 0.9px 13px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid #ff007066;
+  outline: 1px solid var(--hover-color);
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--focus-color);
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--active-color);
   pointer-events: none;
 }
 
@@ -177,7 +178,7 @@
   outline: 1px solid var(--text-color);
 }
 
-.recommendations__container p {
+.section-intro-title {
   margin-bottom: 0;
 }
 
@@ -266,18 +267,18 @@
     left: 20px;
   }
 
-  .reasons {
+  .section-why {
     margin-bottom: 30px;
   }
 
-  .reasons__container {
+  .section-why__container {
     margin-left: 10px;
     display: grid;
     grid-template-columns: 236px 1fr;
     gap: 20px;
   }
 
-  .reasons-card {
+  .section-why .section-card {
     grid-column: 2 / 3;
     margin-right: 20px;
     gap: 10px;
@@ -296,52 +297,53 @@
     margin: 0;
   }
 
-  .concentration {
+  .section-what {
     margin-bottom: 10px;
   }
 
-  .concentration__container {
+  .section-what__container {
     display: flex;
     flex-direction: column;
     margin: 0 10px 0;
   }
 
-  .concentration h2 {
+  .section-what h2 {
     max-width: 236px;
     margin-bottom: 20px;
     margin-left: 20px;
   }
 
-  .concentration-card {
+  .section-what .section-card {
     margin-bottom: 20px;
     margin-right: 10px;
   }
 
-  .concentration-card h3 {
+  .section-what .section-card .section-subtitle {
     margin-bottom: 10px;
   }
 
-  .recommendations {
-    margin: 0;
-    margin-bottom: 10px;
+  .section-how {
+    margin: 0 0 10px;
   }
 
-  .recommendations__container {
+  .section-how__container {
     margin-left: 10px;
     display: grid;
-    grid-template-columns: 247px minmax(auto, 1fr);
+    grid-template-columns: 247px auto;
   }
 
-  .recommendations__container p.title-decor {
-    margin-bottom: 10px;
+  .section-how__cards {
+    display: flex;
+    flex-direction: column;
   }
 
-  .recommendations-card {
-    grid-column: 2 / 3;
-    margin-right: 20px;
+  .section-intro-title {
+    margin: 0 20px 20px;
+  }
+
+  .section-how__cards .section-card {
     gap: 10px;
-    margin-left: 20px;
-    margin-bottom: 19.5px;
+    margin: 0 20px 19.5px;
   }
 
   .visual-examples {
@@ -423,24 +425,24 @@
     margin-top: 94px;
   }
 
-  .reasons__container {
+  .section-why__container {
     grid-template-columns: 315px 1fr;
   }
 
-  .concentration__container {
+  .section-what__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .concentration h2 {
+  .section-what h2 {
     max-width: 315px;
   }
 
-  .concentration-card {
+  .section-what .section-card {
     align-self: start;
   }
 
-  .recommendations__container {
+  .section-how__container {
     grid-template-columns: 323px minmax(auto, 1fr);
   }
 

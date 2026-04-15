@@ -7,11 +7,15 @@
   --family: 'IBM Plex Mono', 'Helvetica', 'Arial', sans-serif;
   --accent-color: #ff0070;
   --main-fs: 18px;
+  --menu-tc: #FF0070;
   --text-color: #f1b2ce;
-  --title-tc: #d800ff;
-  --subtitle-tc: #00002b;
+  --title-tc: #DB00FF;
+  --subtitle-tc: #000028;
   --title-tsm: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --title-tsd: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --bg-image: url(../images/cover-image-dark.png);
-
+  --bg-color: #000028;
+  --hover-color: #FF007066;
+  --focus-color: #FF0070;
+  --active-color: #FF0070;
 }
